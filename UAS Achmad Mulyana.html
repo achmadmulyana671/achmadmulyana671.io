@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Achmad Mulyana - Website Pribadi</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav li a {
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Halo Selamat Datang di Website Pribadi saya</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#galery">Galery</a></li>
+            <li><a href="KALKULATOR">Kalkulator</a></li>
+        </ul>
+    </nav>
+    
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+            Halo Perkenalkan Saya Achmad Mulyana Mahasiswa Universitas Pamulang
+        </p>
+    </section>
+
+
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <p>
+            <img src="https://unpam.ac.id/wp-content/uploads/2016/11/unpam-pusat.jpg" alt="">
+            Berikut adalah Foto Kampus saya belajar
+        </p>
+    </section>
+    
+    <section id="galery">
+        <h2>Galery</h2>
+        <p>
+            Berikut lagu kesukaan saya:
+            <audio src=""></audio>
+            <img src="" alt="">
+        </p>
+
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>
+            WhatsApp: 089665372540<br>
+            Email: ahmadmulyana671@gmail.com
+        </p>
+    </section>
+
+</section>
+<section id="javascript">
+    <center>
+        <h2>INI JAVASCRIPT KALKULATOR DALAM HTML</h2>
+     </center>
+     <input type="text" id="display" disabled>
+<br>
+
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('+')">+</button>
+<br>
+
+<button onclick="appendToDisplay('4')">4</button>
+<button onclick="appendToDisplay('5')">5</button>
+<button onclick="appendToDisplay('6')">6</button>
+<button onclick="appendToDisplay('-')">-</button>
+<br>
+
+<button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button>
+<button onclick="appendToDisplay('')"></button>
+<br>
+
+<button onclick="appendToDisplay('0')">0</button>
+<button onclick="clearDisplay()">C</button>
+<button onclick="calculateResult()">=</button>
+<button onclick="appendToDisplay('/')">/</button>
+
+<script>
+function appendToDisplay(value) {
+    document.getElementById("display").value += value;
+}
+
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+
+function calculateResult() {
+    try {
+        document.getElementById("display").value = eval(document.getElementById("display").value);
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
+}
+</script>
+</section>
+
+<section id="dialogbox">
+        <center>
+            <h2>INI DIALOGBOX DALAM HTML</h2>
+         </center>
+         <button onclick="showDialog()">BUka Dialog</button>
+
+<dialog id="myDialog">
+    <p>Ini merupakan contoh dialog box.</p>
+    <button onclick="closeDialog()">Close</button>
+</dialog>
+
+<script>
+    function showDialog() {
+        if (typeof HTMLDialogElement === 'function') {
+            var myDialog = document.getElementById('myDialog');
+            
+            // Show the dialog box
+            myDialog.showModal();
+        } else {
+            alert('Your browser does not support the dialog element. Please update your browser.');
+        }
+    }
+
+    function closeDialog() {
+        var myDialog = document.getElementById('myDialog');
+
+        myDialog.close();
+    }
+
+
+</section>
+    <section id="javascript">
+        <center>
+            <h2>INI JAVASCRIPT KALKULATOR DALAM HTML</h2>
+         </center>
+         <input type="text" id="display" disabled>
+<br>
+
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('+')">+</button>
+<br>
+
+<button onclick="appendToDisplay('4')">4</button>
+<button onclick="appendToDisplay('5')">5</button>
+<button onclick="appendToDisplay('6')">6</button>
+<button onclick="appendToDisplay('-')">-</button>
+<br>
+
+<button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button>
+<button onclick="appendToDisplay('')"></button>
+<br>
+
+<button onclick="appendToDisplay('0')">0</button>
+<button onclick="clearDisplay()">C</button>
+<button onclick="calculateResult()">=</button>
+<button onclick="appendToDisplay('/')">/</button>
+
+<script>
+    function appendToDisplay(value) {
+        document.getElementById("display").value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById("display").value = "";
+    }
+
+    function calculateResult() {
+        try {
+            document.getElementById("display").value = eval(document.getElementById("display").value);
+        } catch (error) {
+            document.getElementById("display").value = "Error";
+        }
+    }
+</script>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Achmad Mulyana. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>

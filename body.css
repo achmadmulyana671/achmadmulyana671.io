@@ -1,0 +1,33 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
